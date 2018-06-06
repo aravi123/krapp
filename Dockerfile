@@ -5,4 +5,4 @@ COPY ./Gemfile ./Gemfile.lock ./
 RUN gem install bundler && bundler install
 COPY . .
 EXPOSE 3000
-CMD ["bundler","exex","rails","server"]
+CMD ["bundler","exec","rails","server"]
